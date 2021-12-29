@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Inventory Management</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+    body {
+      background-image: url('data:image/jpeg;base64,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');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-size: cover;
+    }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                    <a href="https://lh3.googleusercontent.com/d/14FsbLgtlsPyo11XQsTJ2k7Jg1jDcJ72D=s220?authuser=0"><img src="https://lh3.googleusercontent.com/d/14FsbLgtlsPyo11XQsTJ2k7Jg1jDcJ72D=s220?authuser=0" style="max-width: 20%;" title="Homyzz Logo" /></a>
+            </a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="/about_">About</a></li>
+              <li><a href="/contact_">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/register_"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+            <li><a href="/login_"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    <div class="jumbotron">
+        <h1>Welcome to Homyzz</h1>
+        <p>Home Inventory Management App</p>
+    </div>
+
+</div>
+
+</body>
+</html>

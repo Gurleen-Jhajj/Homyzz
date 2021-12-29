@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Inventory Management</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color:rgb(255, 235, 205);">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                     <a href="https://lh3.googleusercontent.com/d/14FsbLgtlsPyo11XQsTJ2k7Jg1jDcJ72D=s220?authuser=0"><img src="https://lh3.googleusercontent.com/d/14FsbLgtlsPyo11XQsTJ2k7Jg1jDcJ72D=s220?authuser=0" style="max-width: 20%;" title="Homyzz Logo" /></a>
+            </a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+
+              <li><a href="/about2_">About</a></li>
+              <li><a href="/contact2_">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/logout_"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+    <div style="background:rgb(223, 188, 142) " class="jumbotron" >
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Welcome to Homyzz</h1>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Home Inventory Management App</p>
+    </div>
+
+        <div class="container">
+          <h2>My Information</h2>
+          <table class="table table-hover">
+            <tbody>
+
+            {% for info in user_info %}
+            {%      for key,value in info.items()%}
+              <tr>
+                <td>{{key}}={{value}}</td>
+              </tr>
+
+            {% endfor %}
+            {% endfor %}
+
+            </tbody>
+        </table>
+
+
+</div>
+</body>
+</html>
+
+
